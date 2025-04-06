@@ -1,0 +1,184 @@
+Global Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* GitHub Profile Container */
+.github-profile-container {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github-profile-container:hover {
+  transform: scale(1.02);
+}
+
+/* Input Wrapper */
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-wrapper input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Search Button */
+.input-wrapper button {
+  background: #00a8ff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.input-wrapper button:hover {
+  background: #0090e3;
+}
+
+/* User Profile Card */
+.user {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.user-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00a8ff;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.user-header a {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.user-header a:hover {
+  text-decoration: underline;
+}
+
+.username a{
+  color: #ffcc00 !important; 
+}
+
+.user-header p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+}
+
+/* User Stats */
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  gap:2px;
+}
+
+.user-stats article {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-stats p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.user-stats strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Loading & Error */
+h1 {
+  font-size: 18px;
+  color: #00a8ff;
+}
+
+h2 {
+  font-size: 16px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .github-profile-container {
+    width: 95%;
+  }
+
+  .user-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .user-stats article {
+    width: 100%;
+  }
+}
